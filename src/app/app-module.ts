@@ -6,14 +6,16 @@ import { MusicaComponent } from './components/musica-component/musica-component'
 import { CineComponents } from './components/cine-components/cine-components';
 import { NotFoundComponent } from './components/not-found-component/not-found-component';
 import { appRoutinProvider, routing } from './app.routing';
+import { MenuComponent } from './components/menu-component/menu-component';
 
 @NgModule({
   declarations: [
     App,
-    HomeComponent, 
+    HomeComponent,
     MusicaComponent,
     CineComponents,
-    NotFoundComponent
+    NotFoundComponent,
+    MenuComponent,
   ],
   imports: [BrowserModule, routing],
   providers: [provideBrowserGlobalErrorListeners(), appRoutinProvider],
