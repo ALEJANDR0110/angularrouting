@@ -1,0 +1,19 @@
+<h1>Tabla Multiplicar</h1>
+
+<h3>Los resultados de la tabla de {{numero}} son:</h3>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Operacion</th>
+            <th>Resultado</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (obj of tablaMult; track obj) {
+            <tr>
+                <td>{{obj.operacion}}</td>
+                <td>{{obj.resultado}}</td>
+            </tr>
+        }
+    </tbody>
+</table>

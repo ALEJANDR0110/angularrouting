@@ -1,0 +1,9 @@
+<p>menu-tabla-multiplicar works!</p>
+
+<ul>
+    @for (numero of listaNums; track numero) {
+        <li>
+            <a [routerLink]="['/tablaMultiplicar/', numero]">Tabla {{numero}} |</a>
+        </li>
+    }
+</ul>
